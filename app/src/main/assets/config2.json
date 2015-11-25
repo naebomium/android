@@ -1,0 +1,43 @@
+{
+  "basePackageName": "com.babadu.android",
+  "strings": {
+    "main_page_title": "Babadu",
+    "app_name": "Babadu",
+    "mobium_server_url2": "http://extrashop.extradea.com/Processor.ashx?shopId=2846",
+    "mobium_server_url": "http://84.52.74.27:52181/processor.ashx?shopId=1",
+    "youtube_url": "",
+    "vk_url": "",
+    "fb_url" : "",
+    "instagramm_url": ""
+  },
+  "colors": {
+    "color_accent": "#ffc2185b",
+    "NavigationBarColor": "#dee1db",
+    "NavigationBarTintColor": "#d11d66ff",
+    "BadgeBGColor": "#F5A9F2ff",
+    "BadgeTextColor": "#A901DBff",
+    "LeftMenuNavigationBarColor": "#dee1dbff",
+    "LeftMenuNavigationBarTintColor": "#d11d66ff",
+    "BasicColorButton": "#d11d66ff",
+    "BasicColorButtonText": "#ffffffff",
+    "BackgroundColor": "#EFEFF4ff",
+    "BasicTextColor": "#333333ff",
+    "BasicTextColorExtra": "#888888ff",
+    "AlertTintColor": "#d11d66ff",
+    "ActivityIndicatorColor": "#d11d66ff",
+    "BasicColorButton": "#aad6a5ff",
+    "BasicColorButtonText": "#008000",
+    "Vk": "#2d5c93ff",
+    "Facebook": "#1b46acff",
+    "Instagram": "#204870ff",
+    "YouTube": "#fc0007ff"
+  },
+  "text_constants": {
+    "currency_symbol": "р.",
+    "offer_form": {
+      "singular": "товар",
+      "plural1": "товара",
+      "plural2": "товаров"
+    }
+  }
+}

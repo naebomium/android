@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="46dp"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/view_title"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/retry_password"
+        android:textColor="@color/dark_alpha"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:focusableInTouchMode="false"
+        android:textSize="16sp"
+        android:id="@+id/view_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ыаываыва"
+        android:theme="@style/MobiumEditText"/>
+</LinearLayout>

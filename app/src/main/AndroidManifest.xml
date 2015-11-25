@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.mobium.reference"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<permission android:name="${applicationId}.permission.C2D_MESSAGE"
+	            android:protectionLevel="signature"/>
+
+	<!-- PlacePicker also requires OpenGL ES version 2 -->
+	<uses-feature
+		android:glEsVersion="0x00020000"
+		android:required="true"/>
+
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="${applicationId}.permission.C2D_MESSAGE"/>
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+
+	<uses-feature android:name="android.hardware.camera"/>
+
+	<uses-permission android:name="${applicationId}.android.permission.MAPS_RECEIVE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+	<application android:name=".ReferenceApplication"
+	             android:allowBackup="true"
+	             android:hardwareAccelerated="true"
+	             android:icon="@drawable/app_icon"
+	             android:label="@string/app_name"
+	             android:logo="@drawable/app_icon"
+	             android:theme="@style/Theme.AppBaseTheme">
+
+		<activity android:name=".activity.ChoiceRegionActivity"
+		          android:logo="@drawable/app_icon"
+		          android:screenOrientation="portrait"/>
+
+		<activity android:name=".activity.AutoRegionActivity"
+		          android:logo="@drawable/app_icon"
+		          android:screenOrientation="portrait"/>
+
+		<activity android:name=".activity.RegisterAppActivity"
+		          android:logo="@drawable/app_icon"
+		          android:screenOrientation="portrait"/>
+
+		<activity android:name=".activity.FilterActivity"
+		          android:logo="@drawable/app_icon"
+		          android:screenOrientation="portrait"/>
+
+		<activity android:name="net.hockeyapp.android.UpdateActivity" />
+
+
+		<activity android:name=".activity.MainDashboardActivity"
+		          android:icon="@drawable/app_icon"
+		          android:label="@string/app_name"
+		          android:launchMode="singleTask"
+		          android:logo="@drawable/app_icon"
+		          android:screenOrientation="portrait"
+		          android:windowSoftInputMode="adjustPan">
+
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+				<action android:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+
+			<meta-data android:name="android.app.searchable"
+			           android:resource="@xml/search"/>
+		</activity>
+
+
+		<activity android:name=".activity.ScanActivity"
+		          android:uiOptions="splitActionBarWhenNarrow">
+			<meta-data android:name="android.support.UI_OPTIONS"
+			           android:value="splitActionBarWhenNarrow"/>
+		</activity>
+
+		<receiver android:name=".push_logic.CampaignReceiver" android:exported="true">
+			<intent-filter>
+				<action android:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+
+
+		<receiver android:name=".utils.NetworkStateReceiver">
+			<intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_ACTION"/>
+			</intent-filter>
+		</receiver>
+
+
+		<receiver android:name=".push_logic.GCMReceiver"
+		          android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+				<category android:name="${applicationId}"/>
+			</intent-filter>
+		</receiver>
+
+		<service android:name=".push_logic.GCMIntentService"/>
+
+		<receiver android:name="com.mobileapptracker.Tracker" android:exported="true">
+			<intent-filter>
+				<action android:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+
+		<uses-library android:name="com.google.android.maps"
+			android:required="false"/>
+
+		<meta-data
+			android:name="com.google.android.gms.version"
+			android:value="@integer/google_play_services_version"/>
+
+		<meta-data
+			android:name="com.google.android.maps.v2.API_KEY"
+			android:value="AIzaSyDg04o0MCOBkq-iBaAYOA8hy-RbN2VyGwQ"/>
+
+
+		<service android:name="com.google.android.gms.analytics.AnalyticsService"
+		         android:enabled="true"
+		         android:exported="false"/>
+
+		<!-- Optionally, register AnalyticsReceiver and AnalyticsService to support background
+		 dispatching on non-Google Play devices -->
+		<receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+		          android:enabled="true">
+			<intent-filter>
+				<action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+			</intent-filter>
+		</receiver>
+
+
+		<!-- Optionally, register CampaignTrackingReceiver and CampaignTrackingService to enable
+			 installation campaign reporting -->
+		<receiver android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+		          android:exported="true">
+			<intent-filter>
+				<action android:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+		<!-- ... -->
+	</application>
+</manifest>

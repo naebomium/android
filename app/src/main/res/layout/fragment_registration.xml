@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/white">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:orientation="vertical"
+			android:id="@+id/registration_fragment">
+
+			<LinearLayout
+				android:id="@+id/fragment_registration_form"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="16dp"
+				android:orientation="vertical"/>
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/mobium_main_content_without_container_padding"
+				android:layout_marginRight="@dimen/mobium_main_content_without_container_padding"
+				android:minHeight="46dp"
+				android:visibility="gone">
+
+				<TextView
+					android:id="@+id/fragment_registration_type_text"
+					android:layout_width="@dimen/titled_text_view_width"
+					android:layout_height="wrap_content"
+					android:layout_gravity="start|center_vertical"
+					android:text="Юридическое лицо"
+					android:textColor="@color/dark_alpha"
+					android:textStyle="bold"/>
+
+				<Switch
+					android:id="@+id/fragment_registration_type_button"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="end|center_vertical"/>
+			</FrameLayout>
+
+			<Button
+				style="@style/MobiumButton"
+				android:id="@+id/fragment_registration_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="10dp"
+				android:layout_gravity="center_horizontal"
+				android:layout_margin="10dp"
+				android:text="Зарегистрироваться"
+				android:textAllCaps="true"
+				android:background="#FFEB3B"
+				android:textColor="@color/registration_button_state"/>
+		</LinearLayout>
+
+	<FrameLayout
+		android:id="@+id/fragment_registration_progress"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/registration_fragment"
+		android:background="@color/white_background"
+		android:visibility="visible">
+
+		<ProgressBar
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"/>
+	</FrameLayout>
+</RelativeLayout>
+

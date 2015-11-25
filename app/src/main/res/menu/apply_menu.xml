@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:reference="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/apply_menu_ok_button"
+          android:title="@string/mobium_menuApply"
+          reference:showAsAction="always"
+          android:checkable="true"
+          android:icon="@drawable/ok"/>
+
+    <item android:id="@+id/apply_menu_clear_button"
+        android:title="@string/mobium_menuApply"
+        reference:showAsAction="always"
+        android:checkable="true"
+        android:visible="false"
+        android:icon="@drawable/exit"/>
+</menu>

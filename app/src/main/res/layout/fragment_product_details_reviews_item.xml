@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+    <TextView
+            android:id="@+id/product_review_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/design_dark"
+            android:text="Илья"
+            android:layout_marginLeft="@dimen/mobium_card_inner_padding"
+            android:layout_marginTop="4dp"/>
+
+    <TextView
+            android:id="@+id/product_review_item_date"
+            android:layout_below="@id/product_review_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/design_dark"
+            android:alpha="0.5"
+
+            android:text="13 Января 2015"
+            android:textSize="12sp"
+            android:layout_marginLeft="@dimen/mobium_card_inner_padding"/>
+
+    <TextView
+            android:id="@+id/product_review_item_text"
+            android:layout_below="@id/product_review_item_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+
+
+            android:textColor="@color/design_dark"
+
+            android:text="Отличный инструмент, хотя из многообразия БОШа, у меня это единственный в зелееном исполнении, ну так и он и предназначен для лайт использования"
+            android:layout_marginLeft="@dimen/mobium_card_inner_padding"
+            android:layout_marginRight="@dimen/mobium_card_inner_padding"
+            android:minHeight="60dp"
+            android:layout_marginBottom="8dp"/>
+
+    <TextView
+            android:id="@+id/product_review_item_label"
+            android:layout_above="@id/product_review_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+
+            android:textColor="@color/product_review_label_good_color"
+            android:text="Хорошо"
+            android:layout_marginRight="@dimen/mobium_card_inner_padding"
+            android:layout_marginBottom="8dp"/>
+
+
+    <View
+            style="@style/deliver.horizontal"
+            android:layout_below="@id/product_review_item_text"/>
+
+</RelativeLayout>

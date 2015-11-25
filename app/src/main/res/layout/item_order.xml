@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/yellow_ripple"
+        android:paddingTop="4dp"
+        >
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginRight="36dp"
+                android:layout_marginLeft="@dimen/mobium_main_content_without_container_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView android:id="@+id/item_order_id"
+                          android:text="Заказ №499586"
+                          android:textColor="@android:color/black"
+                          android:textSize="@dimen/abc_text_size_medium_material"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:maxLines="1"
+                        />
+                <TextView android:id="@+id/item_order_date"
+                          android:text="от 1.10.14"
+                          android:textColor="@color/abc_secondary_text_material_light"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:maxLines="1"
+                        />
+                <TextView  android:id="@+id/item_order_title"
+                           android:layout_marginTop="15dp"
+                           android:layout_marginBottom="15dp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="@dimen/abc_text_size_medium_material"
+                           android:textColor="@android:color/black"
+                           android:text="Стальная багровая вампирская пила удач"
+                           android:maxLines="3"/>
+
+                <TextView android:id="@+id/item_order_otherItems"
+                          android:layout_marginBottom="8dp"
+                          android:text="Показать еще товары"
+                          android:textColor="@color/abc_secondary_text_material_light"
+                          android:textSize="@dimen/abc_text_size_small_material"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/item_order_cost"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@android:color/black"
+                  android:layout_marginBottom="8dp"
+                  android:textSize="@dimen/abc_text_size_medium_material"
+                  android:layout_marginRight="@dimen/mobium_main_content_without_container_padding"
+                  android:layout_marginLeft="@dimen/mobium_main_content_without_container_padding"
+                  android:text="4500р"
+                  android:layout_gravity="bottom|right"/>
+
+        <TextView android:id="@+id/item_order_status"
+                  android:layout_width="150dp"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/abc_secondary_text_material_light"
+                  android:layout_marginTop="4dp"
+                  android:layout_marginBottom="8dp"
+                  android:textSize="@dimen/abc_text_size_small_material"
+                  android:layout_marginRight="@dimen/mobium_main_content_without_container_padding"
+                  android:layout_marginLeft="@dimen/mobium_main_content_without_container_padding"
+                  android:text="передан в магазин"
+                  android:layout_gravity="right"
+                  android:maxLines="3"
+                  android:gravity="right"/>
+
+        <ImageView
+                android:layout_gravity="center_vertical|right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/go"
+                android:layout_marginRight="@dimen/mobium_main_content_without_container_padding"
+                android:layout_marginLeft="@dimen/mobium_main_content_without_container_padding"
+                />
+
+        <View android:id="@+id/item_order_deliver"
+              style="@style/deliver.horizontal"
+              android:layout_gravity="bottom"
+              />
+
+</FrameLayout>

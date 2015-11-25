@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:reference="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/top_filter"
+          android:title="@string/mobium_menuFilter"
+          reference:showAsAction="ifRoom|collapseActionView"
+          android:checkable="true"
+          android:icon="@drawable/filter"/>
+
+    <item android:id="@+id/top_share"
+          android:title="@string/mobium_menu_share"
+          reference:showAsAction="ifRoom|collapseActionView"
+          android:icon="@drawable/share"/>
+
+    <item android:id="@+id/top_map"
+          reference:showAsAction="ifRoom|collapseActionView"
+          android:title="@string/mobium_menu_map"
+          android:icon="@drawable/location_black"/>
+
+    <item android:id="@+id/top_points_list"
+          reference:showAsAction="ifRoom|collapseActionView"
+          android:title="@string/mobium_menu_list"
+          android:icon="@drawable/list"  />
+
+
+    <item android:id="@+id/top_search"
+          android:title="@string/mobium_menu_search"
+          android:icon="@drawable/search_black"
+          android:iconifiedByDefault="true"
+          android:visible="false"
+          reference:showAsAction="never"
+          reference:actionViewClass="android.widget.SearchView"
+          />
+    <!--reference:showAsAction="always|withText|collapseActionView"-->
+
+    <item android:id="@+id/top_cart"
+          android:title="@string/mobium_menu_shopping_box"
+          reference:showAsAction="always"
+          reference:actionLayout="@layout/view_cart_counter"/>
+</menu>

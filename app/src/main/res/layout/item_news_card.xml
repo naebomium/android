@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+
+    <android.support.v7.widget.CardView
+            android:clickable="false"
+            android:focusable="false"
+            style="@style/MobiumCardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:foreground="@drawable/yellow_ripple"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0dp"
+            android:id="@+id/item_news_card_clickArea"
+            >
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/mobium_main_content_without_container_padding"
+                android:layout_marginLeft="@dimen/mobium_main_content_without_container_padding"
+                >
+
+
+          <com.mobium.reference.views.WebImageView
+                  android:background="@drawable/gray_shape"
+                  android:id="@+id/item_news_card_icon"
+                  android:layout_width="140dp"
+                  android:layout_height="140dp"
+                  android:layout_marginTop="@dimen/mobium_main_content_without_container_padding"
+                  android:layout_marginRight="@dimen/mobium_main_content_without_container_padding"
+                  android:padding="1dp"
+                  android:layout_marginBottom="@dimen/mobium_main_content_without_container_padding"/>
+
+            <TextView
+                    android:id="@+id/item_news_card_title"
+                    android:text="Загл авие статьи Загла вие статьи Заглавие  статьи Загл авие статьи Заглавие статьи Заглавие статьи Заглавие статьи Заглавие статьи Заглавие статьи "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/item_news_card_icon"
+                    android:layout_toRightOf="@+id/item_news_card_icon"
+                    android:maxLines="3"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toLeftOf="@+id/item_news_card_pointer"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/item_news_card_date"
+                    android:text="12 апреля 2018"
+                    android:textColor="@color/dark_alpha"
+                    android:layout_below="@+id/item_news_card_title"
+                    android:layout_alignLeft="@+id/item_news_card_title"
+                    android:textSize="12sp"/>
+
+            <ImageView
+                    android:id="@+id/item_news_card_pointer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/go"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="bottom"/>
+
+</FrameLayout>

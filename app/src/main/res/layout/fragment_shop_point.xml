@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.google.android.gms.maps.MapView
+            android:layout_weight="1.3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_shop_point_map"
+            android:visibility="visible"/>
+
+    <ScrollView
+            android:background="@color/white_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <include
+                    android:id="@+id/fragment_shop_point_subway"
+                    layout="@layout/view_icon_text_undertext"/>
+
+            <View
+                    style="@style/deliver.horizontal"/>
+
+            <include
+                    android:id="@+id/fragment_shop_point_time"
+                    layout="@layout/view_icon_text_undertext"/>
+
+            <View
+                    style="@style/deliver.horizontal"/>
+
+            <include
+                    android:id="@+id/fragment_shop_point_tel"
+                    layout="@layout/view_icon_text_undertext"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

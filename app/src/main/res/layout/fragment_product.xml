@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	android:id="@+id/fragment_product_main_top_layout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+	<com.mobium.reference.views.StickyScrollView
+
+		android:id="@+id/fragment_product_scroll"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fillViewport="true"
+		android:visibility="visible">
+		<LinearLayout
+			android:id="@+id/fragment_catalog_content"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:visibility="visible">
+
+			<!--лейаут растягивается по высоте до высоты экрана во время onCreateView фрагмента-->
+			<LinearLayout
+				android:id="@+id/layout_for_dragged_to_screen_hight"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+
+				<!--поиск-->
+				<com.mobium.reference.views.AdvancedSearchView
+					android:id="@+id/search_view"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					/>
+
+
+				<!--контейнер для рейтинга, фотографий и названия-->
+				<RelativeLayout
+					android:id="@+id/fragment_product_top_card"
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_marginBottom="@dimen/mobium_main_content_in_container_padding"
+					android:layout_marginTop="@dimen/mobium_main_content_in_container_padding"
+					android:layout_weight="1">
+
+					<ImageView
+						android:id="@+id/fragment_product_sale_icon"
+						android:layout_width="wrap_content"
+						android:layout_height="26dp"
+						android:layout_alignBottom="@+id/fragment_product_id"
+						android:layout_marginLeft="@dimen/standard_padding"
+						android:layout_toEndOf="@+id/fragment_product_id"
+						android:layout_toRightOf="@+id/fragment_product_id"
+						android:src="@drawable/sale_label_2x"/>
+
+					<!--айди товара-->
+					<TextView
+						android:id="@+id/fragment_product_id"
+						style="@style/MobiumProductId"
+						android:layout_alignBottom="@+id/fragment_product_rating"
+						android:layout_marginLeft="6dp"
+						android:text=""/>
+
+					<com.mobium.reference.views.MobiumRatingBar
+						android:id="@+id/fragment_product_rating"
+						android:layout_width="100dp"
+						android:layout_height="30dp"
+						android:layout_alignParentRight="true"
+						android:layout_marginBottom="4dp"
+						android:layout_marginRight="4dp"
+						android:gravity="fill_vertical" />
+
+
+					<!--фотографии и название-->
+					<android.support.v7.widget.CardView
+						android:id="@+id/fragment_product_top_card_card_view"
+						style="@style/MobiumCardViewStyle"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_below="@+id/fragment_product_rating"
+						android:layout_marginBottom="@dimen/mobium_vertical_margin_between_containers"
+
+						android:layout_marginLeft="@dimen/mobium_main_container_padding"
+
+						android:layout_marginRight="@dimen/mobium_main_container_padding"
+
+						app:cardBackgroundColor="@android:color/white"
+						android:orientation="horizontal">
+
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:orientation="vertical">
+
+							<!--фотографии-->
+							<com.mobium.reference.views.SaveTouchViewPager
+								android:id="@+id/fragment_product_photos_pager"
+								xmlns:savePager="http://schemas.android.com/apk/res-auto"
+								android:layout_width="match_parent"
+								android:layout_height="0dp"
+								android:layout_margin="@dimen/mobium_main_content_in_container_padding"
+								android:layout_weight="1"
+								android:background="@android:color/white"
+								savePager:square="false"/>
+
+							<!--кружуки под фотографиями-->
+							<LinearLayout
+								android:id="@+id/fragment_product_photos_pager_dots"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_marginTop="4dp"
+								android:baselineAligned="false"
+								android:gravity="center"
+								android:orientation="horizontal"/>
+
+							<!--разделитель-->
+							<View
+								style="@style/deliver.horizontal"
+								android:layout_marginLeft="@dimen/mobium_main_content_in_container_padding"
+								android:layout_marginRight="@dimen/mobium_main_content_in_container_padding"
+								android:layout_marginTop="4dp"
+								/>
+
+							<!--название товара-->
+							<TextView
+								android:id="@+id/fragment_product_title"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_marginBottom="4dp"
+								android:layout_marginTop="4dp"
+								android:maxLines="4"
+								android:paddingLeft="@dimen/mobium_main_content_in_container_padding"
+								android:paddingRight="@dimen/mobium_main_content_in_container_padding"
+								android:textAppearance="?android:attr/textAppearanceLarge"
+								android:textColor="#ff090909"/>
+
+							<!--разделитель-->
+							<View
+								android:id="@+id/fragment_product_after_deliver"
+								style="@style/deliver.horizontal"
+								android:layout_marginBottom="3dp"
+								android:layout_marginLeft="@dimen/mobium_main_content_in_container_padding"
+								android:layout_marginRight="@dimen/mobium_main_content_in_container_padding"/>
+
+							<!--плашка с бесплатной ценой и доставкой-->
+							<LinearLayout
+								android:id="@+id/fragment_product_after_title_info"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_margin="@dimen/mobium_main_content_in_container_padding"
+								android:orientation="horizontal"
+								android:weightSum="1.0">
+
+								<!--Три года гарантии-->
+								<TextView
+									android:id="@+id/fragment_product_leftSale"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:layout_gravity="center"
+									android:layout_weight="0.5"
+									android:text="Три года гарантии"
+									android:textColor="@color/green"
+									android:textSize="16sp"/>
+
+								<!--Бесплатная доставка-->
+								<TextView
+									android:id="@+id/fragment_product_rightSale"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:layout_gravity="center"
+									android:layout_weight="0.5"
+									android:gravity="right"
+									android:text="Бесплатная доставка"
+									android:textColor="@color/green"
+									android:textSize="16sp"/>
+							</LinearLayout>
+						</LinearLayout>
+					</android.support.v7.widget.CardView>
+				</RelativeLayout>
+
+				<!--футер: цена, кнопка купить, прилипает к верху за счет тега  sticky-nonconstant-->
+				<include
+					android:id="@+id/sticky_price_view"
+					layout="@layout/fragment_product_footer"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:tag="sticky-nonconstant"/>
+			</LinearLayout>
+
+			<!--список модификаций-->
+			<android.support.v7.widget.CardView
+				android:id="@+id/modifications_cardview"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/mobium_main_container_padding"
+				android:layout_marginRight="@dimen/mobium_main_container_padding"
+				android:layout_marginTop="@dimen/mobium_vertical_margin_between_containers"
+				android:orientation="vertical"
+				android:visibility="gone">
+
+				<com.mobium.reference.views.ModificationView
+					android:id="@+id/modifications_root"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+				</com.mobium.reference.views.ModificationView>
+			</android.support.v7.widget.CardView>
+
+
+			<!--кнопка позвонить-->
+
+			<include layout="@layout/do_call_button"/>
+
+			<!--Характеристики, аналоги, описание-->
+			<LinearLayout
+				android:id="@+id/fragment_product_top_tabs_titles"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"/>
+
+
+			<FrameLayout
+				android:id="@+id/fragment_product_top_tabs_wrapper"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"/>
+
+			<FrameLayout
+				android:id="@+id/fragment_product_video_place"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:padding="8dp"
+				/>
+
+
+			<!--Аналоги, аксессуары-->
+			<LinearLayout
+				android:id="@+id/fragment_product_bottom_tabs_titles"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"/>
+
+			<FrameLayout
+				android:id="@+id/fragment_product_bottom_tabs_wrapper"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/mobium_vertical_margin_between_containers"/>
+
+
+		</LinearLayout>
+	</com.mobium.reference.views.StickyScrollView>
+
+	<FrameLayout
+		android:id="@+id/fragment_catalog_progress"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/white_background"
+		android:visibility="gone">
+
+
+		<ProgressBar
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"/>
+	</FrameLayout>
+
+	<FrameLayout
+		android:id="@+id/video_fullscreeen"
+		android:visibility="gone"
+		android:background="@color/white"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	</FrameLayout>
+
+</FrameLayout>
+

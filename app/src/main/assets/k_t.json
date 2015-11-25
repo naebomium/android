@@ -1,0 +1,237 @@
+{
+  "IdPage": "ShopItem",
+  "HasNavigationBar": true,
+  "Title": "Главная",
+  "Blocks": [
+
+    {
+      "BlockType": "KT_TOP_BAR"
+    },
+
+    {
+      "BlockType": "IMAGES_PAGER",
+      "Insets": {
+        "Top": "NONE",
+        "Left": "NONE",
+        "Right": "NONE",
+        "Bottom": "NONE"
+      },
+
+      "StickyType": "NONE",
+      "SelectedPageIndicatorColor": "#d11d66ff",
+      "PageIndicatorColor": "#ffffffff",
+      "HeightRatio": 0.454545454,
+      "SpinnerStyle": "Gray",
+      "ContentSource": "IMAGES_URLS"
+    },
+
+    {
+      "BlockType": "LABEL",
+      "TextColor": "#000000ff",
+      "BackgroundColor": "#00000000",
+      "Aligment": "Left",
+      "FontSize": 18,
+      "Lines": 0
+    },
+
+    {
+      "BlockType": "KT_TO_CART_BAR",
+      "Colors": {
+        "BackgroundColor": "#1e1e1eff",
+        "ButtonBackgroundColor": "#4d98d5ff",
+        "ButtonBorderColor": "#4d98d5ff",
+        "ButtonFontColor": "#1e1e1eff",
+        "MainFontColor": "#ffffffff",
+        "MarketingTint": "#ff0000ff"
+      },
+
+      "Images": {
+        "ToCart": "CartIcon/to_cart.png",
+        "CartLoaded": "CatalogVC/cart_loaded.png",
+        "Marketing": "ShopItemIcons/sale_label"
+      },
+
+      "Borders": {
+        "ButtonBorderRadius": 3.0,
+        "ButtonBorderWidth": 1.1
+      }
+    },
+
+    {
+      "BlockType": "KT_CALL_BUTTON"
+    },
+
+    {
+      "BlockType": "SEGMENTED_CONTROL",
+      "SelectedSegment" : 0,
+      "Borders" : {
+        "BorderWidth" : 1,
+        "BorderRadius" : 3
+      },
+
+      "Tabs": [
+        {
+          "Title": "Описание",
+          "Colors": {
+            "BackgroundColor": "#ffffffff",
+            "SelectedBackgroundColor": "#ecececff",
+            "SelectedTextColor": "#000000ff",
+            "TextColor": "#000000ff",
+            "BorderColor": "#e3e3e3ff"
+          },
+
+          "DataType": "DESCRIPTION",
+          "Weight": 1
+        },
+
+        {
+          "Title": "Хар-ки",
+          "Colors": {
+            "BackgroundColor": "#ffffffff",
+            "SelectedBackgroundColor": "#ecececff",
+            "SelectedTextColor": "#000000ff",
+            "TextColor": "#000000ff",
+            "BorderColor": "#e3e3e3ff"
+          },
+
+          "DataType" : "SPECIFICATIONS",
+          "Weight" : 1
+        },
+
+        {
+          "Title": "Отзывы",
+          "Colors": {
+            "BackgroundColor": "#ffffffff",
+            "SelectedBackgroundColor": "#ecececff",
+            "SelectedTextColor": "#000000ff",
+            "TextColor": "#000000ff",
+            "BorderColor": "#e3e3e3ff"
+          },
+
+          "DataType": "COMMENTS",
+          "Weight": 1
+        }
+      ]
+    },
+
+    {
+      "BlockType": "YOUTUBE"
+    },
+
+    {
+      "BlockType": "MENU",
+      "Lines": [
+        {
+          "Elems": [
+            {
+              "BtnModel": {
+                "Title": "Поделиться",
+                "ImagePath": "ShopItemIcons/share.png",
+                "BackgroundColor": "#00000000",
+                "TitleColor": "#828282ff",
+                "BorderColor": "#e3e3e3ff",
+                "BorderWidth": 1.0,
+                "BorderRadius": 0,
+                "ImagePosition": "LEFT",
+                "TitleEdgeInsets": {
+                  "Top": "NONE",
+                  "Left": "SMALL",
+                  "Right": "NONE",
+                  "Bottom": "NONE"
+                },
+
+                "FontSize": 14.0,
+                "TextAligment": "Left",
+                "ActionType": "",
+                "Sides": 14
+
+              },
+
+              "Weight": 1
+            },
+
+            {
+              "BtnModel": {
+                "Title": "В избранное",
+                "ImagePath": "ShopItemIcons/favorite.png",
+                "BackgroundColor": "#00000000",
+                "TitleColor": "#828282ff",
+                "BorderColor": "#e3e3e3ff",
+                "BorderWidth": 1.0,
+                "BorderRadius": 0,
+                "ImagePosition": "LEFT",
+                "TitleEdgeInsets": {
+                  "Top": "NONE",
+                  "Left": "SMALL",
+                  "Right": "NONE",
+                  "Bottom": "NONE"
+                },
+
+                "FontSize": 14.0,
+                "TextAligment": "Left",
+                "ActionType": "",
+                "Sides": 12
+              },
+
+              "Weight": 1
+            }
+          ],
+
+          "Weight": 1,
+          "SpaceBetweenElems": 0.0
+        }
+      ],
+
+      "SpaceBetweenLines": 0.0,
+      "Height": 40.0,
+      "Insets": {
+        "Top": "SMALL",
+        "Left": "SMALL",
+        "Right": "SMALL",
+        "Bottom": "SMALL"
+      },
+
+      "StickyType": "NONE"
+    },
+
+    {
+      "BlockType": "SEGMENTED_CONTROL",
+      "SelectedSegment" : 0,
+      "Borders" : {
+        "BorderWidth" : 1,
+        "BorderRadius" : 3
+      },
+
+      "Tabs": [
+        {
+          "Title": "Аналоги",
+          "Colors": {
+            "BackgroundColor": "#ffffffff",
+            "SelectedBackgroundColor": "#ecececff",
+            "SelectedTextColor": "#000000ff",
+            "TextColor": "#000000ff",
+            "BorderColor": "#e3e3e3ff"
+          },
+
+          "DataType": "OTHER_ITEMS",
+          "Weight": 1
+        },
+
+        {
+          "Title": "С этим товаром покупают",
+          "Colors": {
+            "BackgroundColor": "#ffffffff",
+            "SelectedBackgroundColor": "#ecececff",
+            "SelectedTextColor": "#000000ff",
+            "TextColor": "#000000ff",
+            "BorderColor": "#e3e3e3ff"
+          },
+
+          "DataType" : "RELATED_ITEMS",
+          "Weight" : 2
+        }
+      ]
+    }
+  ]
+}
+

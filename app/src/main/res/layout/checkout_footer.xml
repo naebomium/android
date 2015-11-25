@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:id="@+id/fragment_cart_bottom_info"
+		android:layout_width="match_parent"
+		android:layout_height="75dp"
+		android:layout_gravity="bottom"
+		android:background="@color/design_dark"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:paddingLeft="@dimen/mobium_main_content_without_container_padding"
+		android:paddingRight="@dimen/mobium_main_content_without_container_padding">
+
+		<TextView
+			android:id="@+id/fragment_cart_total_cost"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/fragment_cart_count"
+			android:maxLines="1"
+			android:text="700 руб"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="@color/white_text"/>
+		<TextView
+			android:id="@+id/fragment_cart_count"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="123 Товаров"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="@color/white_text"/>
+
+		<Button
+			android:id="@+id/fragment_cart_purchase"
+			style="@style/MobiumButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:paddingLeft="@dimen/mobium_card_padding"
+			android:paddingRight="@dimen/mobium_card_padding"
+			android:text="Оформить"
+			android:textSize="14sp"/>
+	</RelativeLayout>
+</FrameLayout>

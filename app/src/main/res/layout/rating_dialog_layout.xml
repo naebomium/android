@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/AlertDialog.AppCompat.Light"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="@dimen/mobium_main_content_without_container_padding">
+
+	<TextView
+		android:id="@+id/rating_dialog_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:singleLine="false"
+		android:text="@string/rating_dialog_title"
+		android:textColor="@color/dark_gray"
+		android:textSize="14sp"
+		android:textStyle="bold"/>
+
+	<FrameLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="16dp">
+
+		<RatingBar
+			android:id="@+id/rating_dialog_ratingbar"
+			style="@style/MobiumRatingBar"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/white"
+			android:longClickable="false"
+			android:numStars="5"
+			android:rating="0"
+			android:stepSize="1"/>
+	</FrameLayout>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="8dp">
+
+		<TextView
+			android:id="@+id/rating_dialog_negative_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="напомнить позже"
+			android:textAllCaps="true"
+			android:textColor="@color/product_review_label_good_color"
+			android:textSize="12sp"/>
+
+		<View android:layout_width="16dp"
+		      android:layout_height="1dp"/>
+
+		<TextView
+			android:id="@+id/rating_dialog_positive_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="проголосовать"
+			android:textAllCaps="true"
+			android:textColor="@color/product_review_label_good_color"
+			android:textSize="12sp"
+			android:layout_gravity="center_vertical" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@android:color/white">
+
+	<com.mobium.reference.views.WebImageView
+		android:id="@+id/fragment_cart_item_icon"
+		android:layout_width="90dp"
+		android:layout_height="90dp"
+		android:layout_marginBottom="@dimen/mobium_vertical_margin_between_containers"
+		android:layout_marginLeft="@dimen/mobium_main_content_without_container_padding"
+		android:layout_marginRight="@dimen/mobium_main_content_without_container_padding"
+		android:layout_marginTop="@dimen/mobium_main_content_without_container_padding"
+		android:background="@drawable/gray_shape"
+		android:visibility="visible"/>
+
+	<TextView
+		android:id="@+id/fragment_cart_item_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="@dimen/mobium_main_content_without_container_padding"
+		android:layout_toLeftOf="@+id/fragment_cart_delete_button"
+		android:layout_toRightOf="@+id/fragment_cart_item_icon"
+		android:lines="3"
+		android:text="Большая православная дрель друида"
+		android:textColor="@android:color/black"
+		android:textSize="17sp"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/fragment_cart_item_icon"
+		android:layout_marginBottom="16dp">
+
+
+
+		<TextView
+			android:id="@+id/fragment_cart_item_cost"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/fragment_cart_item_icon"
+			android:layout_alignTop="@+id/fragment_cart_counter"
+			android:gravity="center_vertical"
+			android:text="200 000 р"
+			android:textColor="@android:color/black"
+			android:textStyle="bold"
+			android:layout_weight="1"
+			android:layout_marginLeft="16dp"
+			android:layout_gravity="center_vertical" />
+
+		<LinearLayout
+			android:id="@+id/fragment_cart_counter"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/fragment_cart_item_title"
+			android:layout_alignParentBottom="false"
+			android:layout_below="@+id/fragment_cart_item_icon"
+			android:background="@drawable/gray_shape"
+			android:gravity="center_horizontal"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/fragment_cart_remove_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:alpha="0.5"
+				android:gravity="center_vertical"
+				android:paddingBottom="4dp"
+				android:paddingLeft="12dp"
+				android:paddingRight="12dp"
+				android:paddingTop="4dp"
+				android:text="—"
+				android:textSize="18sp"/>
+
+			<View
+				style="@style/deliver.vertical"/>
+
+			<TextView
+				android:id="@+id/fragment_cart_item_count"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:paddingLeft="12dp"
+				android:paddingRight="12dp"
+				android:text="1"
+				android:textColor="@android:color/black"
+				android:textSize="14sp"/>
+
+			<View
+				style="@style/deliver.vertical"/>
+
+			<TextView
+				android:id="@+id/fragment_cart_add_button"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_vertical"
+				android:alpha="0.6"
+				android:gravity="center_vertical"
+				android:paddingLeft="12dp"
+				android:paddingRight="12dp"
+				android:text="+"
+				android:textSize="18sp"/>
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/fragment_cart_item_total_cost"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="false"
+			android:layout_alignRight="@+id/fragment_cart_delete_button"
+			android:layout_alignTop="@+id/fragment_cart_item_cost"
+			android:text="fghfghfgh"
+			android:textColor="@android:color/black"
+			android:textStyle="bold"
+			android:layout_weight="1"
+			android:gravity="right"
+			android:layout_marginRight="16dp"
+			android:layout_gravity="center_vertical" />
+	</LinearLayout>
+
+	<ImageButton
+		android:id="@+id/fragment_cart_delete_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="false"
+		android:layout_alignParentRight="true"
+		android:layout_alignTop="@+id/fragment_cart_item_title"
+		android:layout_marginRight="@dimen/mobium_main_content_without_container_padding"
+		android:background="@android:color/transparent"
+		android:src="@drawable/delete_balck"/>
+
+</RelativeLayout>
+
+
+

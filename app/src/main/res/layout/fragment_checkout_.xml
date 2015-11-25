@@ -1,0 +1,102 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message_to_user_text_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:padding="16dp"
+            android:text="@string/mobium_make_order_text"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.CardView
+            style="@style/MobiumCardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+
+                <include
+                    android:id="@+id/fragment_checkout_region"
+                    layout="@layout/view_title_autocomplete" />
+
+                <include
+                    android:id="@+id/fragment_checkout_delivery_method"
+                    layout="@layout/view_title_text" />
+
+                <include
+                    android:id="@+id/fragment_checkout_shop_items"
+                    layout="@layout/view_title_text"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/fields_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <include
+                    android:id="@+id/payment_place_"
+                    layout="@layout/view_title_text"
+                    android:visibility="gone" />
+
+
+                <Button
+                    android:id="@+id/fragment_order_buy"
+                    style="@style/MobiumButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/abc_action_bar_icon_vertical_padding_material"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Отправить заказ"
+                    android:textAllCaps="true"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/fragment_order_callToShop"
+                style="@style/MobiumButtonWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="90dp"
+                    android:drawableLeft="@drawable/call"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="Позвонить нам"
+                    android:textAllCaps="true"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

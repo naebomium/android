@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<android.support.v7.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="2dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="16dp"
+			android:orientation="vertical">
+
+			<com.mobium.reference.views.MEditTextWithIcon
+				android:id="@+id/fragment_login_email"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:hint="Email"
+				app:image="@drawable/sser"/>
+
+			<com.mobium.reference.views.MEditTextWithIcon
+				android:id="@+id/fragment_login_password"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:hint="Пароль"
+				app:image="@drawable/password"/>
+
+			<Button
+				android:id="@+id/fragment_login_button_login"
+				style="@style/MobiumButton"
+				android:layout_width="150dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="@dimen/mobium_vertical_margin_between_containers"
+				android:textAllCaps="true"
+				android:text="Войти"/>
+
+			<Button
+				android:id="@+id/fragment_login_button_register"
+				style="@style/MobiumButtonWhite"
+				android:layout_width="150dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginBottom="@dimen/mobium_vertical_margin_between_containers"
+				android:layout_marginTop="@dimen/mobium_vertical_margin_between_containers"
+				android:textAllCaps="true"
+				android:text="Регистрация"/>
+		</LinearLayout>
+	</android.support.v7.widget.CardView>
+
+	<TextView
+		android:layout_gravity="center_horizontal"
+		android:text="Забыли пароль?"
+		android:textColor="@color/black_text"
+		android:layout_marginTop="30dp"
+		android:layout_marginBottom="10dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+
+	<Button
+		android:id="@+id/pass_reset"
+		style="@style/MobiumButtonWhite"
+
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginBottom="@dimen/mobium_vertical_margin_between_containers"
+		android:layout_marginTop="@dimen/mobium_vertical_margin_between_containers"
+		android:textAllCaps="true"
+		android:text="Восстановление пароля"/>
+
+
+</LinearLayout>

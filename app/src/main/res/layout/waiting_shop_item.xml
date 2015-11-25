@@ -1,0 +1,21 @@
+<com.mobium.reference.views.SquareCardView
+	style="@style/MobiumCardViewStyle"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:cardView="http://schemas.android.com/apk/res-auto"
+	android:layout_width="@dimen/fragment_start_product_card_size"
+	android:layout_height="@dimen/fragment_start_product_card_size"
+	android:layout_marginBottom="6dp"
+	android:layout_marginTop="6dp"
+	android:layout_marginLeft="4dp"
+	android:layout_marginRight="9dp"
+	android:background="@drawable/yellow_ripple"
+	cardView:cardElevation="2dp">
+
+
+	<ProgressBar
+		android:id="@+id/waiting_shop_item_progress"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"/>
+
+</com.mobium.reference.views.SquareCardView>

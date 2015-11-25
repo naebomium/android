@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="StickyScrollView">
+		<attr name="stuckShadowHeight" format="dimension"/>
+		<attr name="stuckShadowDrawable" format="reference"/>
+	</declare-styleable>
+
+	<declare-styleable name="SaveTouchViewPager">
+		<attr name="square" format="boolean"/>
+	</declare-styleable>
+
+
+	<declare-styleable name="ExpendableFrameLayout">
+		<attr name="heightCoefficient" format="integer"/>
+	</declare-styleable>
+
+	<declare-styleable name="WebImageView">
+		<attr name="squareWidth" format="boolean"/>
+	</declare-styleable>
+
+	<declare-styleable name="ViewEditTextWithIcon">
+		<attr name="hint" format="string"/>
+		<attr name="image" format="integer"/>
+		<attr name="image.leftMargin" format="dimension"/>
+	</declare-styleable>
+
+	<declare-styleable name="DotedViewPager">
+		<attr name="background_image_res" format="integer"/>
+	</declare-styleable>
+
+</resources>

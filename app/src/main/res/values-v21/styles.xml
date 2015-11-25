@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="MobiumCardViewStyle" parent="CardView.Light">
+		<item name="android:elevation">5dp</item>
+		<item name="cardCornerRadius">2dp</item>
+		<item name="android:focusable">false</item>
+		<item name="android:clickable">true</item>
+		<item name="android:focusableInTouchMode">false</item>
+	</style>
+
+</resources>

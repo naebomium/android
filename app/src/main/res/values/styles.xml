@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.SimpleTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="colorAccent">@color/application_color_accent</item>
+        <item name="colorPrimary">@color/application_color_accent</item>
+        <item name="colorPrimaryDark">@color/application_color_status_bar</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+    </style>
+
+
+    <style name="Theme.AppBaseTheme" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="android:textColor">@android:color/black</item>
+        <item name="colorPrimaryDark">@color/application_color_accent</item>
+        <item name="homeAsUpIndicator">@drawable/back</item>
+        <item name="colorControlNormal">@color/application_color_accent</item>
+
+        <item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+        <item name="android:editTextStyle">@style/MobiumEditText</item>
+        <item name="android:dialogTheme">@style/Dialog</item>
+        <item name="android:ratingBarStyle">@style/MobiumRatingBar</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+
+    </style>
+
+
+    <style name="MobiumEditText" parent="Widget.AppCompat.EditText">
+        <item name="colorAccent">@color/dark_yellow</item>
+        <item name="android:textColorHint">@color/dark_alpha</item>
+        <item name="android:editTextColor">@android:color/black</item>
+        <item name="colorControlNormal">@color/dark_alpha</item>
+        <item name="colorControlActivated">@color/dark_yellow</item>
+        <item name="colorControlHighlight">@color/dark_yellow</item>
+    </style>
+
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/application_color_accent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorAlertDialogListItem">#FFFFFF</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">#00ba76</item>
+        <item name="android:textColorPrimary">@color/dark_gray</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColorAlertDialogListItem">#000000</item>
+    </style>
+
+
+    <!--EditText-->
+    <style name="styleEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/black_text_hint</item>
+    </style>
+
+    <style name="EditTextDarkText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/black_text</item>
+        <item name="android:textColorHint">@color/black_text_hint</item>
+    </style>
+
+    <style name="styleTextInputTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">#000000</item>
+    </style>
+
+    <style name="Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/application_color_accent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorAlertDialogListItem">#FFFFFF</item>
+    </style>
+
+
+    <style name="MyActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:icon">@drawable/logo</item>
+        <item name="android:textColorPrimary">@color/application_color_menu_item</item>
+        <item name="colorControlNormal">@color/application_color_menu_item</item>
+        <item name="actionMenuTextColor">@color/black_text</item>
+        <item name="android:textColorSecondary">@color/black_text</item>
+        <item name="android:textColorHint">@android:color/black</item>
+    </style>
+
+
+    <style name="buttonBase" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="MobiumButton" parent="buttonBase">
+        <item name="android:background">@drawable/button_ripple</item>
+        <item name="android:textColor">@color/application_color_accent</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+
+    <style name="MobiumButtonWhite" parent="buttonBase">
+        <item name="android:background">@drawable/white_button_ripple</item>
+        <item name="android:textColor">@color/ui_button_text</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+
+    <style name="MobiumCardViewStyle" parent="CardView.Light">
+        <item name="cardCornerRadius">2dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="MobiumButtonStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="deliver">
+        <item name="android:background">#1A000000</item>
+    </style>
+
+    <style name="deliver.horizontal" parent="deliver">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+	<style name= "deliver.horizontal.white" parent="deliver.horizontal">
+		<item name="android:background">#AAFFFFFF</item>
+	</style>
+
+	<style name="deliver.vertical" parent="deliver">
+		<item name="android:layout_width">1dp</item>
+		<item name="android:layout_height">match_parent</item>
+	</style>
+
+    <style name="MobiumRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/mobium_action_bar</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:maxHeight">26dip</item>
+    </style>
+
+    <style name="Theme.Filters" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#1A000000</item>
+        <item name="colorControlActivated">#1A000000</item>
+        <item name="colorControlHighlight">#1A000000</item>
+    </style>
+
+    <style name="MobiumProductId">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MobiumTitledPagerTextView">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="MobiumModificationPopupTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="colorAccent">@color/application_color_accent</item>
+        <item name="colorControlNormal">@color/application_color_accent</item>
+        <item name="colorControlActivated">@color/application_color_accent</item>
+    </style>
+
+    <style name="TextInputLayoutCustom" parent="TextLabel">
+        <item name="colorControlHighlight">#000000</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="QuizItemLabel">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="QuizItemImage">
+        <item name="android:layout_height">26dp</item>
+        <item name="android:layout_width">26dp</item>
+    </style>
+
+    <style name="SocialButton">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextQuizResult">
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>

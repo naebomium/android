@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/fragment_product_description_container"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:descendantFocusability="beforeDescendants"
+              android:layout_height="wrap_content">
+
+
+    <org.sufficientlysecure.htmltextview.HtmlTextView
+            android:id="@+id/fragment_product_description_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mobium_main_content_without_container_padding"
+            android:layout_marginLeft="@dimen/mobium_main_content_without_container_padding"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            />
+
+    <View style="@style/deliver.horizontal"/>
+
+    <TextView
+            android:id="@+id/show_more"
+            android:text="Показать полностью"
+            android:background="@drawable/yellow_ripple"
+            android:clickable="true"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:padding="@dimen/mobium_main_content_without_container_padding"
+            android:visibility="gone"
+            android:textColor="@color/dark_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <View style="@style/deliver.horizontal"/>
+
+</LinearLayout>

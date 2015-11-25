@@ -1,0 +1,9 @@
+<resources>
+  <string name='app_name'>Babadu</string>
+  <string name='bundle_id'>mobium_apps_demo_id</string>
+  <string name='mobium_api_key'>d7ea9ac1-8eb0-44f8-809d-bff6944db6c7</string>
+  <string name='mobium_api_protocol'>1.7</string>
+  <string name='mobium_api_url'>http://extrashop.extradea.com/Processor.ashx?shopId=2846</string>
+  <string name='mobium_build_id'>e49b47da-a0fe-40a8-b0f2-67d65e7dccab</string>
+  <string name='package_name'>com.babadu.android</string>
+</resources>

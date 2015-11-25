@@ -1,0 +1,43 @@
+<com.mobium.reference.views.SquareCardView
+	style="@style/MobiumCardViewStyle"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:cardView="http://schemas.android.com/apk/res-auto"
+	android:layout_width="@dimen/fragment_start_product_card_size"
+	android:layout_height="@dimen/fragment_start_product_card_size"
+	android:layout_marginBottom="6dp"
+	android:layout_marginLeft="@dimen/fragment_start_product_left_margin"
+	android:layout_marginRight="@dimen/fragment_start_product_right_margin"
+	android:layout_marginTop="6dp"
+	android:background="@drawable/yellow_ripple"
+	cardView:cardBackgroundColor="@android:color/white"
+	cardView:cardElevation="2dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<com.mobium.reference.views.WebImageView
+			android:id="@+id/category_item_fixed_size_image"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_marginTop="2dp"
+			android:layout_weight="1"
+			android:focusable="false"
+			android:focusableInTouchMode="false"
+			android:minHeight="50dp"/>
+
+		<TextView
+			android:id="@+id/category_item_fixed_size_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="8dp"
+			android:maxLines="2"
+			android:text="категория"
+			android:textColor="#000000"
+			android:textSize="@dimen/start_fragment_items_list_titles_size"
+			android:textStyle="bold"
+			android:gravity="center_horizontal" />
+	</LinearLayout>
+</com.mobium.reference.views.SquareCardView>

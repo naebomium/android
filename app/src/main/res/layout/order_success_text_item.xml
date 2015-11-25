@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/order_success_title"
+        android:textSize="18sp"
+        android:textColor="@color/dark_gray"
+        android:paddingRight="4dp"
+        android:text="Дата"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/order_success_value"
+        android:editable="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingRight="4dp"
+        android:text="24 октября"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

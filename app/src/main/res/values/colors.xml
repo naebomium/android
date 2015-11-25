@@ -1,0 +1,38 @@
+<resources>
+
+	<!--text-->
+	<color name="black_text">@android:color/black</color>
+	<color name="white_text">#fafafa</color>
+	<color name="black_text_hint">#50000000</color>
+
+	<!--material design colors-->
+	<color name="dark_yellow">#FBC02D</color>
+
+	<!--light shades-->
+	<color name="white">#FFFFFF</color>
+	<color name="white_background">#FFFAFAFA</color>
+
+	<!--gray-->
+	<color name="dark_gray">#50000000</color>
+	<color name="light_gray">#a1a1a1</color>
+	<color name="light_gray_background">#e2e2e2</color>
+	<color name="gray_list_pressed">#88FFFFFF</color>
+
+	<!--dark mobium-->
+	<color name="design_dark">#333333</color>
+	<color name="dark_alpha">#50333333</color>
+
+	<!--product item -->
+	<color name="product_review_label_good_color">#00ba6e</color>
+	<color name="product_review_label_bad_color">#ac2613</color>
+
+	<color name="green">#00ba6e</color>
+
+	<color name="turquoise">#00ba6e</color>
+
+	<!--themes colors-->
+	<color name="vk_theme_blue">#4c75a3</color>
+	<color name="facebook_theme_blue">#3b5998</color>
+	<color name="instagram_theme_blue">#316699</color>
+	<color name="youtube_theme_red">#ce2429</color>
+</resources>

@@ -1,0 +1,78 @@
+<android.support.v4.widget.DrawerLayout
+	android:id="@+id/main_layout_drawer"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<FrameLayout
+		android:id="@+id/activity_wrapper"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/coordinates"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"/>
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			android:minHeight="?attr/actionBarSize"
+			app:popupTheme="@style/Theme.AppBaseTheme"
+			app:theme="@style/MyActionBar">
+
+
+			<!--<ImageView-->
+				<!--android:id="@+id/action_bar_menu_icon"-->
+				<!--android:layout_marginRight="16dp"-->
+				<!--android:src="@drawable/menu"-->
+				<!--android:layout_width="wrap_content"-->
+				<!--android:layout_height="wrap_content"-->
+
+				<!--android:layout_centerVertical="true" />-->
+			<!-- -->
+			<!-- -->
+
+			<!--<ImageView-->
+				<!--android:id="@+id/action_bar_logo"-->
+				<!--android:src="@drawable/logo"-->
+				<!--android:layout_width="wrap_content"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:layout_marginRight="16dp"-->
+				<!--android:layout_centerHorizontal="true"-->
+				<!--android:foregroundGravity="center"/>-->
+
+			<!--<TextView-->
+				<!--android:id="@+id/action_bar_title"-->
+				<!--android:text="Заголовок"-->
+
+				<!--android:textSize="21sp"-->
+				<!--android:layout_width="wrap_content"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--/>-->
+
+		</android.support.v7.widget.Toolbar>
+
+		<FrameLayout
+			android:id="@+id/fragment_wrapper"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="?attr/actionBarSize"/>
+
+		<FrameLayout
+			android:id="@+id/video_container"
+			android:clickable="true"
+			android:background="@color/white"
+			android:visibility="gone"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+	</FrameLayout>
+
+	<include layout="@layout/activity_main_left_menu"/>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="@color/white_background"
+		android:baselineAligned="false"
+		android:orientation="horizontal">
+
+		<RelativeLayout
+			android:id="@+id/share_btn"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:background="@drawable/yellow_ripple"
+			android:clickable="true">
+
+			<ImageView
+				android:id="@+id/share"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentTop="true"
+				android:layout_toLeftOf="@+id/textView"
+				android:layout_toStartOf="@+id/textView"
+				android:scaleX="0.8"
+				android:scaleY="0.8"
+				android:src="@drawable/share"/>
+			<TextView
+				android:id="@+id/textView"
+				style="@style/MobiumButtonStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"
+				android:layout_marginLeft="@dimen/standard_padding"
+				android:gravity="center_vertical"
+				android:singleLine="false"
+				android:text="@string/Share"/>
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/favourite_btn"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:background="@drawable/yellow_ripple"
+			android:clickable="true">
+
+			<ImageView
+				android:id="@+id/star"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentTop="true"
+				android:layout_toLeftOf="@+id/addToFavoriteText"
+				android:layout_toStartOf="@+id/addToFavoriteText"
+				android:scaleX="0.8"
+				android:scaleY="0.8"
+				android:src="@drawable/favorite"/>
+			<TextView
+				android:id="@+id/addToFavoriteText"
+				style="@style/MobiumButtonStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"
+				android:layout_marginLeft="@dimen/standard_padding"
+				android:gravity="center_vertical"
+				android:lines="2"
+				android:text="@string/Favourite"/>
+		</RelativeLayout>
+	</LinearLayout>
+</FrameLayout>

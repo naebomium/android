@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="16dp">
+
+    <com.mobium.reference.views.MEditTextWithIcon
+            android:id="@+id/profile_code_input"
+            android:layout_weight="1"
+            app:icon="@drawable/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/profile_code_send_code_button"
+            android:text="Ввести"
+            android:layout_gravity="center_horizontal"
+            style="@style/MobiumButton"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/profile_code_request_code_button"
+            android:layout_marginTop="20dp"
+            android:text="Отправить \n код еще раз"
+            android:layout_gravity="center_horizontal"
+            android:elevation="4dp"
+            android:background="@drawable/white_button_ripple"
+            android:textColor="@drawable/request_code_text"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:id="@+id/code_request_message"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:text="Повторная отправка кода возможна через 60 сек"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

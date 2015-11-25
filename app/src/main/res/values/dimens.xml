@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!--padding-->
+	<dimen name="standard_padding">8dip</dimen>
+	<dimen name="mobium_card_padding">8dp</dimen>
+	<dimen name="mobium_card_inner_padding">16dp</dimen>
+	<dimen name="mobium_fragment_product_share_buttons_layout_left_padding">16dp</dimen>
+
+	<!--container padding-->
+	<dimen name="mobium_main_container_padding">6dp</dimen>
+
+	<!--container inner padding-->
+	<dimen name="mobium_main_content_in_container_padding">10dp</dimen>
+
+	<!--container outer padding-->
+	<dimen name="mobium_main_content_without_container_padding">16dp</dimen>
+
+	<!--margin-->
+	<dimen name="mobium_vertical_margin_between_containers">10dp</dimen>
+	<dimen name="mobium_search_margin">13dp</dimen>
+	<dimen name="icon_edit_text_margin">55dp</dimen>
+	<dimen name="icon_list_item_label_left_margin">72dp</dimen>
+
+	<!--text-->
+	<dimen name="start_fragment_items_list_titles_size">13sp</dimen>
+	<dimen name="mobium_fragment_product_feature_item_text_size">15sp</dimen>
+
+	<!--width/height-->
+	<dimen name="left_menu_item_height">48dp</dimen>
+	<dimen name="fragment_start_product_list_height">170dp</dimen>
+	<dimen name="titled_text_view_width">70dp</dimen>
+
+	<dimen name="fragment_start_product_card_size">160dp</dimen>
+	<dimen name="fragment_start_product_right_margin">9dp</dimen>
+	<dimen name="fragment_start_product_left_margin">4dp</dimen>
+</resources>

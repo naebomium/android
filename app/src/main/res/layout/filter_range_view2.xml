@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+        >
+
+
+    <TextView
+            android:id="@+id/filter_view_title"
+            android:text="Цена"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+
+            android:textColor="@color/dark_gray"
+            android:layout_marginLeft="16dp"
+
+            android:textIsSelectable="false"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yellow_ripple"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/filter_range_view_from"
+                android:text="999р"
+                android:theme="@style/Theme.Filters"
+                android:layout_width="wrap_content"
+                android:minWidth="70dp"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textColor="@drawable/range_filter_selector"
+
+                android:enabled="false"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+
+        <FrameLayout
+                android:id="@+id/filter_range_view_range"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:minHeight="46dp"/>
+
+        <TextView
+                android:id="@+id/filter_range_view_to"
+                android:text="9999р"
+                android:textSize="16sp"
+                android:textColor="@drawable/range_filter_selector"
+
+                android:theme="@style/Theme.Filters"
+                android:layout_width="wrap_content"
+                android:minWidth="70dp"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+
+                android:lines="1"
+                />
+
+    </LinearLayout>
+
+
+    <View
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            style="@style/deliver.horizontal"/>
+
+
+</LinearLayout>

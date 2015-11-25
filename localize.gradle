@@ -1,0 +1,42 @@
+import groovy.json.JsonSlurper
+import groovy.xml.MarkupBuilder
+
+task generateStrings {
+//    getLocales().each { f ->
+//        parseFile(f)
+//    }
+}
+
+def Collection<File> getLocales() {
+    File fi = new File('app/src/main/assets/');
+    return fi.listFiles().findAll({ f -> f.name.contains('strings_') });
+}
+
+def parseFile(File file) {
+    def json = new JsonSlurper().parseText(file.text)
+
+    def sw = new StringWriter()
+    def xml = new MarkupBuilder(sw)
+
+    xml.resources() {
+        json.each {
+            k, v ->
+                string(name: "${k}", "${v}")
+        }
+    }
+
+    def findLocaleSuffix = (file.name =~ /^strings_([a-z]{2})\.json$/)
+
+    String lang = findLocaleSuffix[0][1];
+
+    String path = "app/src/main/res/";
+
+    def subdir = new File(new File(path), "values-" + lang)
+    subdir.mkdirs()
+
+    def stringsFile = new File(subdir.path + "/strings.xml")
+
+    stringsFile.write(sw.toString())
+}
+
+

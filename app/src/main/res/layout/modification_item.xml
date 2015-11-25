@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/mobium_main_container_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:text="Header"
+            android:textSize="20sp"
+            android:id="@+id/modification_title"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"/>
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:text="Value"
+            android:textSize="18sp"
+            android:textColor="@color/green"
+            android:layout_weight="2"
+            android:id="@+id/modification_value"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <View
+        style="@style/deliver.horizontal"
+        android:id="@+id/divider"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
+

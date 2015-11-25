@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+            android:orientation="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/yellow_ripple"
+            android:id="@+id/view_icon_text_underText"
+        >
+
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Позвоните нам (звонок бесплатный)"
+                android:textSize="14sp"
+                android:id="@+id/under_title"
+                android:singleLine="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:visibility="visible"
+                android:textIsSelectable="false"
+                android:textColor="@color/dark_alpha"/>
+
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:id="@+id/icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:src="@android:drawable/ic_menu_call"
+                        android:layout_gravity="center_vertical"
+                     />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Новая Деревня Новая Деревня Новая Деревня Новая Деревня Новая Деревня"
+                        android:textSize="16sp"
+                        android:id="@+id/text"
+                        android:layout_marginLeft="72dp"
+                        android:layout_marginRight="16dp"
+                        android:textColor="@color/design_dark"/>
+        </FrameLayout>
+        <View
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/deliver"
+                android:visibility="gone"
+                style="@style/deliver.horizontal"/>
+</LinearLayout>

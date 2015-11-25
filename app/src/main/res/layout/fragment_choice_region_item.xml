@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="56dp"
+             android:background="@drawable/yellow_ripple"
+	>
+	<ImageView
+		android:id="@+id/fragment_choice_region_item_selected"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:layout_marginLeft="16dp"
+		android:src="@drawable/selected"/>
+
+	<TextView
+		android:id="@+id/fragment_choice_region_item_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:layout_marginLeft="72dp"
+		android:layout_marginRight="16dp"
+		android:fontFamily="sans-serif"
+		android:maxLines="2"
+		android:text="Регион"
+		android:textColor="@color/primary_dark_material_dark"
+		android:textSize="16sp"/>
+
+	<View style="@style/deliver.horizontal"
+	      android:layout_gravity="bottom"
+	      android:visibility="gone"/>
+</FrameLayout>

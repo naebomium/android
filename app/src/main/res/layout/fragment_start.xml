@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.mobium.reference.views.FixedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fadingEdge="none">
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <com.mobium.reference.views.AdvancedSearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <FrameLayout
+            android:id="@+id/fragment_start_banners_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="178dp"
+            android:visibility="visible">
+
+            <com.mobium.config.common_views.BannerView
+                android:id="@+id/fragment_start_banners"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:background_image_res="@drawable/sale_bg" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/fragment_start_open_catalog"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="#ff3fffde"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@+id/catalog_label_wrapper"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/catalog" />
+
+                <ImageView
+                    android:id="@+id/catalog_label_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/catalog_label"
+                    android:layout_alignRight="@+id/catalog_label"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/catalog_label" />
+
+                <TextView
+                    android:id="@+id/catalog_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:paddingBottom="6dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="2dp"
+                    android:text="Каталог" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragment_start_open_sales"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="@drawable/sale_bg"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/imageButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@+id/sale_label_wrapper"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/sale" />
+
+                <ImageView
+                    android:id="@+id/sale_label_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/sale_label"
+                    android:layout_alignRight="@+id/sale_label"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/sale_label" />
+
+                <TextView
+                    android:id="@+id/sale_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:paddingBottom="6dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="2dp"
+                    android:text="Акции" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/fragment_start_sales_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mobium_main_container_padding"
+            android:layout_marginTop="@dimen/mobium_vertical_margin_between_containers"
+            android:text="Акционные товары"
+            android:textSize="21sp" />
+
+        <com.mobium.reference.views.SaveScrollRecyclerView
+            android:id="@+id/fragment_start_sales"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_start_product_list_height"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/fragment_start_top_categories_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mobium_main_container_padding"
+            android:layout_marginTop="@dimen/mobium_vertical_margin_between_containers"
+            android:text="Популярные категории"
+            android:textSize="21sp" />
+
+        <com.mobium.reference.views.SaveScrollRecyclerView
+            android:id="@+id/fragment_start_top_categories"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_start_product_list_height"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="visible" />
+
+
+        <!--кнопка адреса магазинов-->
+        <Button
+            android:id="@+id/fragment_product_shops_button"
+            style="@style/MobiumButtonWhite"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mobium_vertical_margin_between_containers"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="@dimen/mobium_vertical_margin_between_containers"
+            android:gravity="left|center_vertical"
+            android:text="Адреса магазинов"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:typeface="normal" />
+
+
+    </LinearLayout>
+</com.mobium.reference.views.FixedScrollView>

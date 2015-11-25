@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+   <Button
+           style="@style/MobiumButton"
+           android:text="button1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+    <Button
+            style="@style/MobiumButtonWhite"
+            android:text="button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <Button
+            android:background="@drawable/yellow_ripple"
+            android:text="button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    <Button
+            android:background="@drawable/white_ripple"
+            android:text="button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    <Button
+            android:background="@drawable/white_ripple"
+            android:text="button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    <Button
+            android:background="@drawable/white_button_background"
+            android:text="button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

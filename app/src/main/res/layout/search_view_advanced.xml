@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/design_dark"
+    android:orientation="horizontal">
+
+	<EditText android:id="@+id/searchField"
+	          android:layout_width="0dp"
+	          android:layout_height="28dp"
+	          android:layout_gravity="center"
+	          android:layout_marginLeft="@dimen/mobium_main_content_without_container_padding"
+	          android:layout_marginRight="8dp"
+	          android:layout_weight="1"
+	          android:background="@color/white_text"
+	          android:hint="@string/search_hint"
+	          android:imeOptions="actionSearch"
+	          android:lines="1"
+	          android:paddingLeft="4dp"
+	          android:singleLine="true"
+	          android:textAppearance="?android:attr/textAppearanceMedium"
+	          android:textColor="@color/design_dark"/>
+
+    <ImageView
+        android:id="@+id/scanImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="16dp"
+        android:onClick="doOpenScanner"
+        android:scaleType="fitXY"
+        android:src="@drawable/qr" />
+
+    <ImageView
+        android:id="@+id/microphoneIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="@dimen/mobium_main_content_without_container_padding"
+        android:scaleType="fitXY"
+        android:src="@drawable/voice_search_white" />
+</LinearLayout>

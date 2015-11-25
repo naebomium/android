@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wrapLinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white_background"
+    android:orientation="vertical">
+
+
+    <com.mobium.reference.views.ZoomImageViewPager
+        android:id="@+id/paging_horizontal_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <com.mobium.reference.views.MiniatureHorizontalScrollView
+        android:id="@+id/miniature_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:layout_weight="0"
+        android:fadingEdge="none"
+        android:minHeight="68dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/bulletsContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="horizontal" />
+    </com.mobium.reference.views.MiniatureHorizontalScrollView>
+</LinearLayout>

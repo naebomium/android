@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/catalog_list_selector"
+        android:clickable="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+
+
+    <com.mobium.reference.views.WebImageView
+            android:id="@+id/item_shop_category_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:scaleType="fitCenter"
+            android:visibility="visible" />
+
+
+    <TextView
+            android:id="@+id/item_shop_category_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:maxLines="2"
+            android:text="КАТЕГОРИЯ \"
+            android:textColor="@color/black_text"
+            android:textSize="16sp"
+            android:layout_weight="1" />
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:cropToPadding="false"
+            android:focusable="false"
+            android:src="@drawable/go" />
+        </LinearLayout>
+
+    <View
+            android:id="@+id/item_shop_category_deliver"
+            style="@style/deliver.horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="55dp"/>
+
+
+
+</FrameLayout>

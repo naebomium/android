@@ -1,0 +1,165 @@
+{
+  "Title": "Insets left,right,bottom, padding top, bottom",
+  "Blocks": [
+    {
+      "BlockType": "SEARCH_BAR",
+      "Placeholder": "Поиск по каталогу",
+
+      "BarcodeSearchEnabled": true,
+      "ScanIcon" : "qr",
+
+      "VoiceSearchEnabled" : true,
+      "VoiceIcon" : "voice_search_white",
+
+      "BackgroundColor" : "#333333ff",
+      "TextAreaColor" : "#ffffff",
+      "TextColor" : "#191919",
+      "HintColor" : "#EFEFF4ff",
+
+      "Padding": {
+        "Top": "NONE",
+        "Left": "NORMAL",
+        "Right": "NORMAL",
+        "Bottom": "NONE"
+      },
+      "StickyType": "NONE"
+    },
+    {
+      "BlockType": "IMAGES_PAGER",
+      "Insets": {
+        "Top": "NONE",
+        "Left": "NONE",
+        "Right": "NONE",
+        "Bottom": "NONE"
+      },
+      "StickyType": "NONE",
+      "SelectedPageIndicatorColor": "#4d98d5ff",
+      "PageIndicatorColor": "#ffffffff",
+      "SpinnerStyle": "White",
+      "HeightRatio": 0.494444444,
+      "ImagesPagerContentSource": "API_METHOD",
+      "ImagesPagerApiMethodType": "BANNERS"
+
+    },
+    {
+      "BlockType": "MENU",
+      "Lines": [
+        {
+
+          "Elems": [
+
+            {
+
+              "BtnModel": {
+
+                "Title": "Каталог",
+
+                "ImagePath": null,
+
+                "BackgroundColor": "#d11d66ff",
+
+                "TitleColor": "#ffffffff",
+
+                "BorderColor": "#ecebf1ff",
+
+                "BorderWidth": 3.0,
+
+                "BorderRadius": 0.0,
+
+                "ImagePosition": "LEFT",
+
+                "TitleEdgeInsets": {
+
+                  "Top": "NONE",
+
+                  "Left": "LARGE",
+
+                  "Right": "NONE",
+
+                  "Bottom": "NONE"
+
+                },
+
+                "FontSize": 20.0,
+
+                "TextAligment": "Left",
+
+                "Data": "0",
+
+                "ActionType": "openCategory"
+
+              },
+
+              "Weight": 1
+
+            }
+
+          ],
+
+          "Weight": 1,
+
+          "SpaceBetweenElems": 0.0
+
+        }
+
+      ],
+      "SpaceBetweenLines": 0.0,
+      "Height": 65.0,
+
+
+
+      "Insets": {
+
+        "Top": "NONE",
+
+        "Left": "NONE",
+
+        "Right": "NONE",
+
+        "Bottom": "NONE"
+
+      },
+
+      "StickyType": "NONE"
+
+    },
+    {
+      "BlockType": "LABEL",
+      "Text": "Акционные товары",
+      "Alignment": "Center",
+      "BackgroundColor": "#4d98d500",
+      "TextColor": "#d11d66ff",
+      "IndependentSize" : "NORMAL",
+      "Insets": {
+        "Top": "SMALL",
+        "Left": "SMALL",
+        "Right": "SMALL",
+        "Bottom": "SMALL"
+      },
+      "StickyType": "NONE"
+    },
+    {
+      "BlockType": "COLLECTION_VIEW",
+      "Insets": {
+        "Top": "NONE",
+        "Left": "NONE",
+        "Right": "NONE",
+        "Bottom": "NONE"
+      },
+      "Colors":{
+        "ItemBorderColor" : "#222222ff",
+        "BGColor" 	: "#333333ff",
+        "ItemBGColor" 	: "#333333ff",
+        "TextColor" 	: "#ff6596ff",
+        "PriceColor" 	: "#ad6596ff",
+        "OldPriceColor" : "#a16948ff"
+      },
+      "StickyType": "NONE",
+      "ContentType": "ITEMS",
+      "ContentSource": "API_METHOD",
+      "ApiMethod": "MARKETING_ITEMS",
+      "SpinnerStyle": "White",
+      "Limit" : 20
+    }
+  ]
+}

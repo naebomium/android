@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	style="@style/AlertDialog.AppCompat.Light"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:padding="@dimen/mobium_main_content_without_container_padding">
+
+	<TextView
+		android:id="@+id/title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/fragment_contacts_email_wrapper"
+		android:layout_marginBottom="18dp"
+		android:layout_marginTop="15dp"
+		android:inputType="textEmailAddress"
+		android:text="Напишите нам, что мы можем улучшить?"
+		android:textColor="@android:color/darker_gray"
+		android:textSize="18sp"/>
+
+	<android.support.design.widget.TextInputLayout
+		android:id="@+id/fragment_contacts_email_wrapper"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/title"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"
+		android:theme="@style/styleTextInputTextAppearance"
+		app:hintTextAppearance="@style/TextInputLayoutCustom">
+		<EditText
+			android:id="@+id/report_email"
+			style="@style/styleEditText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:hint="E-mail"
+			android:textColor="#000000"
+			android:inputType="textEmailAddress"
+			android:textSize="18sp"
+			android:theme="@style/MobiumEditText"/>
+	</android.support.design.widget.TextInputLayout>
+
+	<TextView
+		android:id="@+id/email_error"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/fragment_contacts_email_wrapper"
+		android:gravity="right"
+		android:textColor="@color/product_review_label_bad_color"/>
+
+	<android.support.design.widget.TextInputLayout
+		android:id="@+id/fragment_contacts_suggest_wrapper"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/email_error"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"
+		android:theme="@style/styleTextInputTextAppearance"
+		app:hintTextAppearance="@style/TextInputLayoutCustom">
+		<EditText
+			android:id="@+id/report_message"
+			style="@style/styleEditText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Ваши предложения"
+			android:inputType="textMultiLine"
+			android:maxLines="10"
+			android:textColor="#000000"
+			android:textSize="18sp"
+			android:theme="@style/MobiumEditText"/>
+	</android.support.design.widget.TextInputLayout>
+
+	<TextView
+		android:id="@+id/message_error"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/fragment_contacts_suggest_wrapper"
+		android:gravity="right"
+		android:textColor="@color/product_review_label_bad_color"/>
+
+	<Button
+		android:id="@+id/report_submit"
+		style="@style/MobiumButton"
+
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/message_error"
+		android:layout_centerHorizontal="true" android:text="ОТПРАВИТЬ"
+		android:textSize="14sp"/>
+
+</RelativeLayout>

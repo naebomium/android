@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Cart page -->
+    <string name="cart_title">Корзина</string>
+    <!-- Favourites page -->
+    <string name="favourites_title">"Отложенные товары"</string>
+
+
+    <!-- Common strings -->
+    <string name="repeating_error_message">%s Повторить попытку?</string>
+    <string name="repeating_error_positive">Да</string>
+    <string name="repeating_error_negative">Нет</string>
+    <string name="not_repeating_error_negative">Назад</string>
+    <string name="action_delivery_title">Доставка</string>
+    <string name="not_have_internet_access">Отсутствует доступ к сети интернет</string>
+
+    <string name="map_title">Карта</string>
+
+    <string name="articles_title">Статьи</string>
+
+
+    <string name="product_details_fetures_title">Хар-ки</string>
+    <string name="reviewLabel_1">Ужасно</string>
+    <string name="reviewLabel_2">Очень плохо</string>
+    <string name="reviewLabel_3">Плохо</string>
+    <string name="reviewLabel_4">Хорошо</string>
+    <string name="reviewLabel_5">Очень хорошо</string>
+
+
+    <string name="add_to_favourite">В избранное</string>
+    <string name="remove_from_favourite">Удалить \nиз избранных</string>
+
+    <integer name="AnaloguesProductCardMarginDp">4</integer>
+
+
+    <string name="error_connection">Ошибка связи с магазином.</string>
+    <string name="error_internal_server_error">Внутренняя ошибка магазина.</string>
+	<string name="error_no_regions_with_service">Невозможно получить список сервисных центров
+	</string>
+	<string name="warning_no_service_in_current_region">В данном регионе нет сервисных центров
+	</string>
+
+    <string name="mobium_menuApply">Фильтр</string>
+
+
+    <string name="mobium_menuFilter">Фильтр</string>
+    <string name="mobium_menu_share">Рассказать друзьям</string>
+    <string name="mobium_menu_map">Показать на карте</string>
+    <string name="mobium_menu_list">Показать списком</string>
+    <string name="mobium_menu_shopping_box">Корзина</string>
+	<string name="contact_info_hint">
+		<font size="11">Контактное лицо</font>
+	</string>
+	<string name="number_hint">
+		<font size="11">Номер телефона</font>
+	</string>
+	<string name="email_hint">
+		<font size="11">E-mail</font>
+	</string>
+    <string name="mobium_menu_search">Поиск</string>
+	<string name="mobium_make_order_text">Заполните форму ниже.\nНаш менеджер свяжется с вами в
+		ближайшее время для уточнения способа оплаты и желаемого времени доставки.
+	</string>
+    <string name="data_exchange">Обмен данными…</string>
+
+    <string name="change_city_dialog_title">Смена региона</string>
+    <string name="change_city_dialog_cancel">Отмена</string>
+    <string name="change_city_dialog_change">Изменить</string>
+
+    <string name="rating_dialog_title">Понравилось приложение? Проголосуйте!</string>
+
+    <!--Item shop product card-->
+    <string name="Favourite">В избранное</string>
+    <string name="Share">Поделиться</string>
+
+    <!--Registration-->
+    <string name="retry_password">Пароль \nповторно</string>
+    <string name="social_message">Следите за новостями %s в социальных сетях</string>
+    <string name="search_hint">Начать поиск</string>
+    <string name="favourites_message">Отложенные товары</string>
+    <string name="cart_empty">В корзине еще нет товаров</string>
+    <string name="cart_remove_item_message">Удалить товар из корзины?</string>
+    <string name="cart_remove_item_positive_text">Удалить</string>
+    <string name="cart_remove_item_negative_text">Отмена</string>
+
+</resources>

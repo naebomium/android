@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/design_dark"
+        android:paddingRight="@dimen/mobium_main_container_padding"
+        android:tag="sticky-nonconstant"
+        >
+
+    <TextView
+            android:id="@+id/fragment_product_sale_red_area"
+            android:layout_width="wrap_content"
+            android:text="SALE"
+            android:textSize="14sp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:background="#ffff2b2b"
+            android:textColor="@color/white_text"/>
+
+    <TextView
+            android:id="@+id/fragment_product_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white_text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="700 руб"
+            android:gravity="center"
+            android:maxLines="2"
+            android:layout_weight="1"
+            />
+
+    <TextView
+
+            android:id="@+id/fragment_product_cost_old"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" 123  РУБ"
+            android:maxLines="2"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:textColor="@color/white_text"/>
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            style="@style/MobiumButton"
+            android:text="В КОРЗИНУ"
+            android:layout_marginTop="@dimen/mobium_card_padding"
+            android:layout_marginBottom="@dimen/mobium_card_padding"
+            android:paddingLeft="@dimen/mobium_card_padding"
+            android:id="@+id/fragment_product_add_to_card_button"
+
+            android:layout_marginLeft="2dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+import groovy.json.JsonSlurper
+import groovy.xml.MarkupBuilder
+
+task mobiumResources {
+    def File configFile = file('app/src/main/assets/config.json')
+    def InputJSON = new JsonSlurper().parseText(configFile.text)
+
+    rootProject.ext.basePackageName = InputJSON.static_data.package_name
+
+    def strings = getStrings(InputJSON)
+    def colors = getColors(InputJSON)
+    colors.put("application_color_menu_item", InputJSON.design.navigation_bar.ui_home_native_icon_color)
+
+    generateStrings(strings, "app/src/main/res/values/generated_strings.xml")
+    generateColors(colors, "app/src/main/res/values/generated_colors.xml")
+}
+
+def generateStrings(strings, String fileName) {
+    def sw = new StringWriter()
+    def stringXml = new MarkupBuilder(sw)
+
+    stringXml.resources() {
+        strings.each {
+            k, v ->
+                string(name: "${k}", "${v}")
+        }
+    }
+
+    def stringsFile = new File(fileName)
+    stringsFile.write(sw.toString())
+}
+
+def generateColors(colors, String fileName) {
+    def sw = new StringWriter()
+    def colorsXml = new MarkupBuilder(sw)
+    colorsXml.resources() {
+        colors.each {
+            k, v ->
+                color(name: "${k}", "${v}")
+        }
+    }
+    def colorsFile = new File(fileName)
+    colorsFile.write(sw.toString())
+}
+
+def Map getStrings(inputFile) {
+    return inputFile.static_data
+}
+def Map getColors(inputFile) {
+    return inputFile.colors.static_colors;
+}

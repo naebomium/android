@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fragment_start_product_right_margin">2dp</dimen>
+    <dimen name="fragment_start_product_left_margin">2dp</dimen>
+    <dimen name="fragment_start_product_card_size">150dp</dimen>
+    <dimen name="fragment_start_product_list_height">160dp</dimen>
+
+</resources>

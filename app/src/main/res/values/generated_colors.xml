@@ -1,0 +1,10 @@
+<resources>
+  <color name='application_background'>#EFEFF4ff</color>
+  <color name='application_color_accent'>#ffc2185b</color>
+  <color name='application_color_menu_item'>#d11d66ff</color>
+  <color name='application_color_status_bar'>#ffc21888</color>
+  <color name='ui_button_background'>#d11d66ff</color>
+  <color name='ui_button_text'>#ffffffff</color>
+  <color name='ui_text_color'>#333333ff</color>
+  <color name='ui_text_color_secondary'>#888888ff</color>
+</resources>

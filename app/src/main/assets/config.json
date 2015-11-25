@@ -1,0 +1,177 @@
+{
+  "static_data": {
+    "app_name": "Babadu",
+    "package_name": "com.babadu.android",
+    "bundle_id": "mobium_apps_demo_id",
+    "mobium_build_id": "e49b47da-a0fe-40a8-b0f2-67d65e7dccab",
+    "mobium_api_url": "http://extrashop.extradea.com/Processor.ashx?shopId=2846",
+    "mobium_api_key": "d7ea9ac1-8eb0-44f8-809d-bff6944db6c7",
+    "mobium_api_protocol": "1.7"
+  },
+  "application_data": {
+    "profile_enabled ": false,
+    "profile_base_url ": null,
+    "mobium_profile_api ": {
+    },
+    "application_shop_enabled ": false,
+    "service_google_analytics_id ": "google_id_a3d2c3",
+    "service_flurry_id ": "flurry_id_d3der",
+    "service_mat_conversation ": "asd123",
+    "service_mat_advertiser ": "asd123",
+    "social_vk": "vk.com/id_user",
+    "social_facebook": "facebook.com/id_user",
+    "social_youtube": "youtube.com/id_user",
+    "social_twitter": "twitter.com/id_user",
+    "api_key_google_youtube_api": "AIzaSyDJj4-9T1SHblVE1C8bCpwT99U3fMEqzC4",
+    "api_key_google_place_api": "AIzaSyBdSfW3GMilVd2t6muHf8oqwpp6vyibp70",
+    "api_key_google_maps_api": "asdasdasd",
+    "shop_phone": "27777777",
+    "shop_currency_placeholder": "%s руб"
+  },
+
+  "colors": {
+    "static_colors": {
+      "application_background": "#EFEFF4ff",
+      "application_color_accent": "#ffc2185b",
+      "application_color_status_bar": "#ffc21888",
+      "ui_text_color": "#333333ff",
+      "ui_text_color_secondary": "#888888ff",
+      "ui_button_background": "#d11d66ff",
+      "ui_button_text": "#ffffffff"
+    },
+    "user_colors": {
+    }
+  },
+
+  "translations": [
+    {
+      "lang_code": "rus",
+      "strings": {
+        "positive": "ок",
+        "negative": "отмена",
+        "start_page_title": "Магазин приложений",
+        "dialogs_change_region_title": "Смена региона",
+        "dialogs_change_region_ok": "изменить",
+        "dialogs_change_region_cancel": "отмена",
+        "dialogs_change_region_message": "Вы уверены, что хотите сменить регион",
+        "view_search_hint_text": "Поиск по каталогу",
+        "empty_region" : "Выбор региона",
+
+        "left_menu_start_page": "Главная",
+        "left_menu_catalog": "Каталог",
+        "left_menu_sales": "Главная",
+        "left_menu_user_data": "Личный кабинет",
+        "left_menu_favourites": "Избранные товары",
+        "left_menu_history": "История заказов",
+        "left_menu_shops": "Адреса магазинов"
+      }
+    }
+  ],
+  "design": {
+    "navigation_bar": {
+      "color_background": "#11223344",
+      "color_text": "#c2185b",
+      "ui_cart_enabled": false,
+      "ui_gravity": "center",
+      "ui_text": "checkout_screen_title",
+      "ui_icon": "action_bar_title.png",
+      "ui_mode": "icon",
+      "ui_home_native_icon_color":"#d11d66ff"
+
+    },
+    "left_menu": {
+
+      "menu_background_color": "#ffffffff",
+      "menu_background_image": "",
+      "menu_background_image_everywhere": false,
+      "menu_background_mode": "color",
+
+      "change_region_icon": "location_black.png",
+
+      "change_region_title_color": "#d11d66ff",
+      "change_region_empty": "empty_region",
+      "change_region_dialog_title": "dialogs_change_region_title",
+      "change_region_dialog_message": "dialogs_change_region_message",
+      "change_region_dialog_ok": "dialogs_change_region_ok",
+      "change_region_dialog_cancel": "dialogs_change_region_cancel",
+
+      "search_hint_text": "view_search_hint_text",
+      "search_hint_color": "#d11d66ff",
+      "search_text_color": "#d11d66ff",
+
+      "navigation_color_cell": "#d11d66ff",
+      "navigation_color_section": "#d11d66ff",
+      "navigation_color_section_separator": "#d11d66ff",
+
+      "navigation_sections": [
+        {
+          "title": "",
+          "cells": [
+            {
+              "action_type": "openMainScreen",
+              "action_data": "",
+              "title": "left_menu_start_page",
+              "image": "left_menu_home.png"
+            },
+            {
+              "action_type": "openCatalogInsideMenu",
+              "action_data": "0",
+              "title": "left_menu_catalog",
+              "image": "catalog.png"
+            },
+            {
+              "action_type": "open",
+              "action_data": "",
+              "title": "left_menu_sales",
+              "image": "ic_sale.png"
+            }
+          ]
+        },
+        {
+          "title": "left_menu_user_data",
+          "cells": [
+            {
+              "action_type": "openCart",
+              "action_data": "",
+              "title": "left_menu_cart",
+              "image": "left_menu_cart.png"
+            },
+            {
+              "action_type": "openFavourites",
+              "action_data": "",
+              "title": "left_menu_favourites",
+              "image": "left_menu_star"
+            },
+            {
+              "action_type": "openHistory",
+              "action_data": "",
+              "title": "left_menu_history",
+              "image": "left_menu_order_list"
+            }
+          ]
+        },
+        {
+          "title": "left_menu_shop_info",
+          "cells": [
+            {
+              "action_type": "openShops",
+              "action_data": "",
+              "title": "left_menu_shops",
+              "image": "left_menu_shops"
+            }
+          ]
+        }
+      ]
+    },
+    "screens" : {
+      "main_screen" : {
+        "navigation_bar" : {
+
+        },
+        "blocks" : [
+
+        ]
+      }
+    }
+  }
+}

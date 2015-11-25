@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="56dp"
+             android:clickable="true"
+             android:background="@drawable/yellow_ripple"
+        >
+
+    <ImageView
+            android:id="@+id/textViewWithImage_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+         />
+
+    <TextView
+            android:id="@+id/textViewWithImage_subtitle"
+            android:text="Загаловок"
+            android:textColor="@color/dark_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/titled_text_view_width"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical"/>
+
+
+    <TextView
+            android:id="@+id/textViewWithImage_title"
+            android:text="Текст"
+            android:layout_marginLeft="@dimen/titled_text_view_width"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+    <View
+            style="@style/deliver.horizontal"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/titled_text_view_width"
+            android:layout_marginBottom="5dp"/>
+
+</FrameLayout>

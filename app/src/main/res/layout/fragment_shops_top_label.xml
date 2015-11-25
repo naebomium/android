@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+             >
+    <TextView
+            android:id="@+id/fragment_shops_region_title"
+            android:background="@color/design_dark"
+            android:text="Санкт-Петербург"
+            android:textColor="@color/application_color_accent"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="@dimen/icon_list_item_label_left_margin"
+            android:gravity="center_vertical"/>
+
+    <ImageView
+            android:id="@+id/fragment_shops_region_id_image"
+
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/location_black"
+            android:layout_marginLeft="16dp"
+            />
+
+</merge>

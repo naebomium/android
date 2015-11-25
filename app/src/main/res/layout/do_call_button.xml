@@ -1,0 +1,13 @@
+<Button
+    android:id="@+id/fragment_product_do_call"
+    style="@style/MobiumButtonWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/mobium_vertical_margin_between_containers"
+    android:layout_marginLeft="@dimen/mobium_main_container_padding"
+    android:layout_marginRight="@dimen/mobium_main_container_padding"
+    android:layout_marginTop="@dimen/mobium_vertical_margin_between_containers"
+    android:gravity="center"
+    android:text="Позвонить нам"
+    android:textColor="@color/design_dark"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

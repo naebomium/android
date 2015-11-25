@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:id="@+id/product_review_review_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            />
+
+
+    <TextView
+            android:id="@+id/product_review_review_list_more"
+            android:padding="@dimen/mobium_card_inner_padding"
+            android:text="Показать еще"
+            android:background="@drawable/yellow_ripple"
+            android:clickable="true"
+            android:textSize="@dimen/abc_text_size_medium_material"
+
+            android:textColor="@color/dark_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+    <View style="@style/deliver.horizontal"/>
+
+</LinearLayout>

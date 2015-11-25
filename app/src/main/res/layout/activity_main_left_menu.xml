@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/leftMenuWrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@color/design_dark"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/leftMenuCityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/yellow_ripple"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/region_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/mobium_main_content_without_container_padding"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/location_black" />
+
+        <TextView
+            android:id="@+id/leftMenuCityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/icon_list_item_label_left_margin"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:text="Moscow"
+            android:textColor="@color/application_color_accent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mobium_search_margin"
+        android:layout_marginRight="@dimen/mobium_main_content_without_container_padding"
+        android:layout_marginTop="10dp"
+        android:clickable="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/left_menu_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/search_hint"
+                android:imeOptions="actionSearch"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_gray" />
+        </android.support.design.widget.TextInputLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp">
+
+        <com.mobium.reference.leftmenu.LeftMenuListView
+            android:id="@+id/leftMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fastScrollEnabled="true"
+            android:overScrollMode="never" />
+
+        <ProgressBar
+            android:id="@+id/leftMenuProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

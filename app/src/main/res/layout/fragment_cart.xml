@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<TextView
+		android:id="@+id/hintText"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:padding="20dp"
+		android:text="@string/cart_empty"
+		android:textColor="@color/dark_gray"
+		android:textSize="18sp"
+		android:visibility="invisible"/>
+
+	<ScrollView
+		android:id="@+id/fragment_cart_items_wrapper"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginBottom="65dp">
+
+		<android.support.v7.widget.CardView
+			style="@style/MobiumCardViewStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="30dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:id="@+id/fragment_cart_items"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"/>
+
+				<include
+					android:id="@+id/free_delivery_view"
+					layout="@layout/view_free_delivery"/>
+			</LinearLayout>
+		</android.support.v7.widget.CardView>
+	</ScrollView>
+	<include
+		android:id="@+id/checkoutFooter"
+		layout="@layout/checkout_footer"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom"/>
+</FrameLayout>

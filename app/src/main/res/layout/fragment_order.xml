@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<ScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:lineSpacingExtra="4dp"
+				android:padding="16dp"
+				android:text="@string/mobium_make_order_text"
+				android:textSize="16sp"/>
+
+			<android.support.v7.widget.CardView
+				style="@style/MobiumCardViewStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="4dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="@dimen/mobium_card_padding"
+					android:layout_marginTop="@dimen/mobium_card_padding"
+					android:orientation="vertical">
+
+					<com.mobium.reference.views.MEditTextWithIcon
+						android:id="@+id/fragment_order_name"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						app:hint="@string/contact_info_hint"
+						app:image="@drawable/sser"/>
+
+					<com.mobium.reference.views.MEditTextWithIcon
+						android:id="@+id/fragment_order_phone"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						app:hint="@string/number_hint"
+						app:image="@drawable/phone_screen"/>
+
+					<com.mobium.reference.views.MEditTextWithIcon
+						android:id="@+id/fragment_order_email"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						app:hint="@string/email_hint"
+						app:image="@drawable/email"/>
+
+					<Button
+						android:id="@+id/fragment_order_buy"
+						style="@style/MobiumButton"
+						android:layout_width="wrap_content"
+						android:layout_height="35dp"
+						android:layout_gravity="center_horizontal"
+						android:layout_marginBottom="@dimen/abc_action_bar_icon_vertical_padding_material"
+						android:layout_marginTop="8dp"
+						android:paddingLeft="8dp"
+						android:paddingRight="8dp"
+						android:text="Отправить заказ"
+						android:textAllCaps="true"
+						android:textSize="12dp"/>
+
+					<ProgressBar
+						android:id="@+id/fragment_order_progressBar"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:visibility="gone"/>
+				</LinearLayout>
+			</android.support.v7.widget.CardView>
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="70dp"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:layout_weight="1">
+
+				<RelativeLayout
+					android:id="@+id/fragment_order_callToShop"
+					style="@style/MobiumButtonWhite"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="35dp"
+						android:layout_marginLeft="90dp"
+						android:drawableLeft="@drawable/call"
+						android:drawablePadding="10dp"
+						android:gravity="center"
+						android:text="Позвонить нам"
+						android:textAllCaps="true"
+						android:textSize="12sp"/>
+				</RelativeLayout>
+			</FrameLayout>
+		</LinearLayout>
+	</ScrollView>

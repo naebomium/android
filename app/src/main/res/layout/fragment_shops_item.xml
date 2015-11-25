@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="88dp"
+             android:clickable="true"
+             android:background="@drawable/yellow_ripple"
+          >
+
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_shops_item_icon"
+            android:src="@drawable/underground"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/mobium_main_content_without_container_padding"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_vertical"
+            />
+
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Чкаловская"
+              android:textColor="@color/design_dark"
+              android:singleLine="true"
+              android:id="@+id/fragment_shops_item_title"
+              android:textSize="16sp"
+              android:layout_marginTop="16dp"
+              android:layout_marginLeft="@dimen/icon_list_item_label_left_margin"
+              android:layout_marginRight="50dp"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="17sp"
+
+              android:text="Близ метро, за поворотом, где дрелью сверлят кашалотов"
+              android:textColor="@color/dark_gray"
+              android:singleLine="false"
+              android:id="@+id/fragment_shops_item_subTitle"
+              android:textSize="14sp"
+              android:layout_marginTop="16dp"
+              android:layout_marginLeft="@dimen/icon_list_item_label_left_margin"
+              android:layout_marginRight="50dp"
+              android:layout_marginBottom="16dp"/>
+
+
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cropToPadding="false"
+            android:src="@drawable/go"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/mobium_main_content_without_container_padding"/>
+    <View
+            android:layout_gravity="bottom"
+            android:id="@+id/fragment_shops_item_deliver"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            style="@style/deliver.horizontal"
+            />
+</FrameLayout>

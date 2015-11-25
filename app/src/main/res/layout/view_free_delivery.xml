@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <View
+        android:id="@+id/cartItemDivider"
+        style="@style/deliver.horizontal"
+      />
+
+    <TextView
+        android:layout_marginTop="1dp"
+        android:id="@+id/freeDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Бесплатная доставка"
+        android:textAllCaps="true"
+        android:textColor="@color/turquoise"/>
+</FrameLayout>

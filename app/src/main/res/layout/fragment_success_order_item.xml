@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+    <com.mobium.reference.views.WebImageView
+            android:id="@+id/fragment_success_order_item_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="@dimen/mobium_vertical_margin_between_containers"
+            android:layout_marginTop="@dimen/mobium_main_content_without_container_padding"
+            android:layout_marginLeft="@dimen/mobium_main_content_without_container_padding"
+            android:layout_marginRight="@dimen/mobium_main_content_without_container_padding"
+            android:background="@drawable/gray_shape"/>
+
+    <TextView
+            android:id="@+id/fragment_success_order_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/fragment_success_order_item_icon"
+            android:layout_marginTop="@dimen/mobium_main_content_without_container_padding"
+            android:text="Большая православная дрель друида"
+            android:textSize="17sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="@dimen/mobium_main_content_without_container_padding"
+            android:maxLines="5"/>
+
+    <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="200 000 р"
+            android:id="@+id/fragment_success_order_item_cost"
+            android:textStyle="bold"
+            android:lines="1"
+            android:gravity="center_vertical"
+            android:layout_alignTop="@+id/item_success_order_counter"
+            android:layout_marginLeft="1dp"
+            android:layout_alignLeft="@+id/fragment_success_order_item_icon"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+            android:background="@drawable/dark_gray_shape"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="false"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/fragment_success_order_item_icon"
+            android:layout_alignLeft="@+id/fragment_success_order_item_title"
+            android:id="@+id/item_success_order_counter">
+
+        <TextView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Кол-во"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"/>
+
+        <TextView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="12"
+                android:id="@+id/item_success_order_count"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200 000 р"
+            android:id="@+id/fragment_success_order_item_total_cost"
+            android:textStyle="bold"
+            android:lines="1"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/fragment_success_order_item_cost"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="@dimen/mobium_main_content_without_container_padding"/>
+
+    <View
+
+            style="@style/deliver.horizontal"
+            android:layout_below="@+id/item_success_order_counter"
+            android:layout_marginTop="@dimen/mobium_vertical_margin_between_containers"/>
+
+
+</RelativeLayout>
+
+

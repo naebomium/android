@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="46dp"
+            >
+
+
+    <TextView
+            android:id="@+id/TitledText_title"
+            android:layout_gravity="center_vertical"
+            android:text="Загаловок"
+            android:textColor="@color/dark_alpha"
+            android:layout_width="@dimen/titled_text_view_width"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/TitledText_text"
+            android:layout_gravity="center_vertical"
+            android:text="Текст"
+            android:layout_marginLeft="@dimen/titled_text_view_width"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+    <View
+            style="@style/deliver.horizontal"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/titled_text_view_width"
+            android:layout_marginBottom="5dp"/>
+
+</FrameLayout>

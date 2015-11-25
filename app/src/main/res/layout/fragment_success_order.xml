@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:background="@color/white_background"
+            android:id="@+id/fragment_success_order_header"
+            >
+
+        <TextView android:id="@+id/fragment_success_order_date"
+                  android:text="от 15.23 23"
+                  android:textColor="@color/abc_secondary_text_material_light"
+                  android:textSize="@dimen/abc_text_size_small_material"
+                  android:layout_width="wrap_content"
+                  android:layout_marginLeft="@dimen/mobium_main_content_without_container_padding"
+                  android:layout_height="wrap_content"
+                  android:layout_alignBaseline="@+id/fragment_success_order_status"/>
+
+        <TextView android:id="@+id/fragment_success_order_status"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/abc_text_size_medium_material"
+                  android:textColor="@android:color/black"
+                  android:text="Оформляется"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginRight="@dimen/mobium_main_content_without_container_padding"
+                />
+
+        <TextView android:id="@+id/fragment_success_order_massage"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/abc_text_size_medium_material"
+                  android:text="Всего 5 товаров на сумму 15000 рублей"
+                  android:layout_margin="@dimen/mobium_main_content_without_container_padding"
+                  android:textColor="@android:color/black"
+                  android:layout_below="@id/fragment_success_order_status"/>
+
+        <View android:id="@+id/fragment_success_order_deliver"
+              android:layout_below="@id/fragment_success_order_massage"
+              style="@style/deliver.horizontal"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/fragment_success_order_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/white_background"
+            android:scrollbars="horizontal"
+
+            />
+
+</LinearLayout>
